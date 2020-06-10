@@ -16,3 +16,6 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ## Check the app images in app_images folder
+
+<img = "https://github.com/rishabh2000jain/food_recipe/blob/master/app_images/img1.jpeg"/>
+![alt text](https://github.com/rishabh2000jain/food_recipe/blob/master/app_images/img1.jpeg)
