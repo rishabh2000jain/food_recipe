@@ -87,7 +87,7 @@ class IconUnderlinedTextWithData extends StatelessWidget {
 }
 
 class CircularButton extends StatefulWidget {
-  Function onPress;
+  final Function onPress;
 
   CircularButton({this.onPress});
 

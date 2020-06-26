@@ -4,6 +4,8 @@ import 'package:foodrecipe/screens/food_recipe_page.dart';
 import 'package:line_awesome_icons/line_awesome_icons.dart';
 import 'package:foodrecipe/components/component.dart';
 
+import 'construction_screen.dart';
+
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -49,10 +51,9 @@ class HomeScreen extends StatelessWidget {
               ),
               CircularButton(
                 onPress: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) {
-                        return FoodRecipePage();
-                      }));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return FoodRecipePage();
+                  }));
                 },
               ),
               IconUnderlinedTextWithData(
@@ -64,7 +65,12 @@ class HomeScreen extends StatelessWidget {
                 height: 10.0,
               ),
               CircularButton(
-                onPress: () {},
+                onPress: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (BuildContext context) {
+                        return ConstructionScreen();
+                      }));
+                },
               ),
               IconUnderlinedTextWithData(
                 textIUT: 'Nutrition Analysis',
@@ -75,7 +81,12 @@ class HomeScreen extends StatelessWidget {
                 height: 10.0,
               ),
               CircularButton(
-                onPress: () {},
+                onPress: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (BuildContext context) {
+                        return ConstructionScreen();
+                      }));
+                },
               ),
               SizedBox(
                 height: 20.0,
@@ -98,4 +109,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
